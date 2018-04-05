@@ -48,7 +48,7 @@ Lastly, R squared which represents the degree of variability in the response tha
 ##Feature Importance
 One of the best qualities of gradient boosting is how it identifies feature importance. Feature importance is defined by the extent to which predictions were improved as a result of the introduction of a variable. The greater the improvement in prediction, the higher importance is attached to that feature. The following graph summarizes the feature importances relative to the most important feature in the prediction of salary.
 
-|<img src="https://github.com/zdanish1/SalaryPrediction/blob/master/feature_importance.png" alt="feature importance" width="380" height="300">|
+|<img src="https://github.com/zdanish1/SalaryPrediction/blob/master/feature_importance.png" alt="feature importance" width="320" height="300">|
 | :--: |
 |Fig 1|
 
