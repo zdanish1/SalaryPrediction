@@ -39,13 +39,13 @@ Eventually, gradient boosting proved to be the best algorithm for this model. Th
 
 According to the cross validated grid search results, the optimal parameter combination was tree depth of 7 and learning rate of 0.2. Other than these i tried increasing learning rate but the improvement was minimal. I also experimented with various numbers of estimators and settled on 40 because above 40, the improvements in MSE were marginal. The biggest issue that concerned me during training was overfitting. I wanted an optimized algorithm but not over optimized. Overfitting occurs when the model fits the training set too well and the test set not so much. In practice, when test error exceeds training error, the model is said to be overfitting. Therefore, I tried to keep the depth, the number of trees as well as the learning rate small to prevent overfitting.
 
-##Assessing Prediction Accuracy
+## Assessing Prediction Accuracy
 I used Mean Squared Error (MSE) as my metric of choice to measure performance of each model. Generally in regression the options are MSE, MAE (Mean Absolute Error and Median Absolute Error), and R_squared. MSE is the most common approach to
 measuring performance and it is especially useful since it penalizes large errors heavily. MAE is another good approach since it is more interpretable than MSE - it literally tells you how off you are on average in your predictions. RMSE (root mean squared error) is not the same as MAE but is a good proxy for Mean Absolute Error.
 
 Lastly, R squared which represents the degree of variability in the response that is a direct result of predictor variables is another commonly used metric. In this case however, feature importance represents how much variability each feature results in. Using R squared therefore, was somewhat redundant here.
 
-##Feature Importance
+## Feature Importance
 One of the best qualities of gradient boosting is how it identifies feature importance. Feature importance is defined by the extent to which predictions were improved as a result of the introduction of a variable. The greater the improvement in prediction, the higher importance is attached to that feature. The following graph summarizes the feature importances relative to the most important feature in the prediction of salary.
 
 |<img src="https://github.com/zdanish1/SalaryPrediction/blob/master/feature_importance.png" alt="feature importance" width="320" height="300">|
